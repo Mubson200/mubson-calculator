@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body>
+   
+<section  id="homepage" class="homepage">
+    <div class="div1">
+        <button class="btn1">Home</button>
+       <button onclick="registration()" class="btn2">Sign up </button>
+    
+    </div>
+    <p class="txt1">AUTOMATED STUDENT <br>INFORMATION SYSTEM</p>
+    <P class="txt2">An efficient way of keeping students' records</P>
+    <div class="div2">
+    <button onclick="loginPage()"  class="btn3">LOGIN </button>
+        
+    </div>
+</section>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>> -->
+
+
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+  <section style="display: none;" id="registerPage" class="register">
+    <div class="div3">
+        
+        <div class="div4">
+            <button onclick="back()" style="font-size: 50px; background-color: green; color: black; text-align: center; ">⬅</button>
+            <p style="font-size: xx-large; text-align: center;" class="txt3">Register</p>
+    
+            <!-- <p>________________________________________________</p> -->
+            <p style="color: red; font-size: small;" id="fill"></p>
+            <p>User type</p>
+            <select name="" id="option1">
+                
+                <option value="student">Student</option>
+            </select>
+            <p >First name</p>
+            <input  id="first_name" placeholder="Enter First Name">
+            <p>Last name</p>
+            <input  id="last_name" placeholder="Enter Last Name">
+            <p>Middle name</p>
+            <input  id="middle_name" placeholder="Enter Middle Name">
+            <p>Matric No.</p>
+            <input  id="number1" placeholder="Enter Matric No.">
+            <p>Email</p>
+            <input  id="mail1" type="email" placeholder="Enter email">
+            <p>Password</p>
+            <input  id="pass1" type="password" placeholder="Enter Password">
+            <div class="div5">
+                <button onclick="register()"  class="btn3">Register</button>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+
+    <section style="display: none;" id="login" class="login">
+        <div class="div6">
+          <div class="div7">
+            <button onclick="back()" style="font-weight: 1000;  font-size: 50px; background-color: green; color: black; text-align: center; ">⬅</button>
+
+    
+              <p style="font-size: xx-large; text-align: center;" class="txt3">Login</p>
+      
+              <!-- <p>________________________________________________</p> -->
+              <p style="color: red; font-size: small;" id="fillIn"></p>
+              <p>User type</p>
+              <select name="" id="option2">
+                  
+                  <option value="student">Student</option>
+              </select>
+              <p >Matric No.
+
+              </p>
+              <input id="number2" placeholder="Enter Matric No.">
+              <p >Password</p>
+              <input id="pass2" type="password" placeholder="Enter Password">
+              <div class="div8">
+                  <button onclick="login()" id="login">Login</button>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- >>>>>>>>>>>>>>> -->
+     <section id="display" style="display: none; background-color: green; height: 65vh; padding: 100px; ">
+        
+     <p id="display1">Firstname: </p>
+     <p id="display2">Lastname: </p>
+     <p id="display3">Middlename: </p>
+     <p id="display4">Matric Number: </p>
+     <p id="display5">Email Address: </p>
+     <span style="font-size: large; font-weight: 1000;">Add passport &emsp;&emsp;</span><input id="imgInput" type="file" accept="image/*">
+     <div style="display: flex; justify-content: end; align-items: center;">
+        <div  id="imgDiv"></div>
+     </div>
+     
+     <!-- <img style="height: 150px; width: 150px; border-radius: 50%; object-fit: cover; background: #dfdfdf;" id="imgDis" src="../../../../Pictures/profilepic.PNG" alt="Uploaded image"> -->
+     </section>
+
+</body>
+<script src="index.js">
+    
+</script>
+
+</html>
